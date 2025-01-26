@@ -6,7 +6,7 @@ structured output
 store in DB
 vector database
 fine tuning
-presentable output - bot or streamlit kinda thing
+presentable output - bot or streamlit kinda thing (add images into readme)
 
 Simple output is okay but bulding around it takes time.
 Final - Github

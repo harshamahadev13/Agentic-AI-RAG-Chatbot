@@ -1,0 +1,21 @@
+KEEP DOING THIS FOR A WEEK 
+
+nice & proper usecase - may be image or videos
+RAG
+structured output
+store in DB
+vector database
+fine tuning
+presentable output - bot or streamlit kinda thing
+
+Simple output is okay but bulding around it takes time.
+Final - Github
+
+Observation -Not very fast
+
+reference list:
+https://www.youtube.com/watch?v=74SnvbQYgx8
+
+
+
+

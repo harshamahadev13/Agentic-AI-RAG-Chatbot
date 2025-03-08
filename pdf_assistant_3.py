@@ -11,16 +11,21 @@ import os
 from dotenv import load_dotenv
 load_dotenv() 
 
-os.environ["GROQ_API_KEY"]=os.getenv("GROQ_API_KEY")
-db_url = "postgresql+psycopg://ai:ai@localhost:5532/ai" # VectorDB running via Docker.
+import phi.api
+phi.api=os.getenv("PHI_API_KEY")
 
+
+os.environ["GROQ_API_KEY"]=os.getenv("GROQ_API_KEY")
+db_url = "postgresql+psycopg://ai:ai@localhost:5532/ai"
+
+#knowledge base
 knowledge_base = PDFUrlKnowledgeBase(
     urls=["https://phi-public.s3.amazonaws.com/recipes/ThaiRecipes.pdf"],
-    vector_db=PgVector2(collection="recipes", db_url=db_url)
+    vector_db=PgVector2(table_name="recipes", db_url=db_url)
 )
-
 knowledge_base.load()
 
+# storage
 storage=PgAgentStorage(table_name="pdf_assistant",db_url=db_url)
 
 def pdf_assistant(new: bool = False, user: str = "user"):

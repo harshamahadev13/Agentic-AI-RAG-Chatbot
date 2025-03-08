@@ -1,7 +1,11 @@
-# instead of making a team or a multi agent in code, we can use playground to make it into a chatbot.
-# multi agent or team will give results in the terminal and playground gives the result in phi --> playground.
-# This is Beta version though
+# instead of making a team or multi agent in code like app.py, we can use playground to make it into a chatbot.
+# multi agent or team will give results in the terminal.
+# Whereas playground gives the result in --> phidata --> playground.
+# This is Beta version though, yet looks good.
 
+
+# import packages 
+# import env variables
 from phi.agent import Agent
 from phi.model.groq import Groq
 from phi.tools.duckduckgo import DuckDuckGo
@@ -11,10 +15,15 @@ import uvicorn
 import os
 load_dotenv() 
 
+
+# use API keys
 from phi.playground import Playground, serve_playground_app
 import phi.api
 phi.api=os.getenv("PHI_API_KEY")
 
+
+# create agent structure
+# This agent is to search the web
 web_agent = Agent(
     name="Web Agent",
     role="Search the web for information",
@@ -25,11 +34,9 @@ web_agent = Agent(
     markdown=True,
 )
 
+# This agent is to get the financial data
 finance_agent = Agent(
-
     name="Finance Agent - Harsha merge",
-    #  makes sense
-
     role="Get financial data",
     model=Groq(id="llama-3.3-70b-versatile"),
     tools=[YFinanceTools(stock_price=True, analyst_recommendations=True, company_info=True)],
@@ -38,6 +45,8 @@ finance_agent = Agent(
     markdown=True,
 )
 
+
+# Use the playground feature
 app=Playground(agents=[finance_agent,web_agent]).get_app()
 
 if __name__=="__main__":

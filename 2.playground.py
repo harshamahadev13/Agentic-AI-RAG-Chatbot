@@ -1,3 +1,8 @@
+# instead of making a team or multi agent in code like app.py, we can use playground to make it into a chatbot.
+# multi agent or team will give results in the terminal.
+# Whereas playground gives the result in --> phidata --> playground.
+# This is Beta version though, yet looks good.
+
 # import packages 
 # import env variables
 from phi.agent import Agent
@@ -5,9 +10,9 @@ from phi.model.groq import Groq
 from phi.tools.duckduckgo import DuckDuckGo
 from phi.tools.yfinance import YFinanceTools
 from dotenv import load_dotenv
+import uvicorn
 import os
 load_dotenv() 
-
 
 # use API keys
 from phi.playground import Playground, serve_playground_app
@@ -29,7 +34,7 @@ web_agent = Agent(
 
 # This agent is to get the financial data
 finance_agent = Agent(
-    name="Finance Agent",
+    name="Finance Agent - Harsha merge",
     role="Get financial data",
     model=Groq(id="llama-3.3-70b-versatile"),
     tools=[YFinanceTools(stock_price=True, analyst_recommendations=True, company_info=True)],
@@ -38,14 +43,13 @@ finance_agent = Agent(
     markdown=True,
 )
 
-# Make a team of agent by combining them
-agent_team = Agent(
-    team=[web_agent, finance_agent],
-    model=Groq(id="llama-3.3-70b-versatile"),
-    instructions=["Always include sources", "Use tables to display data"],
-    show_tool_calls=True,
-    markdown=True
-)
+# Use the playground feature
+app=Playground(agents=[finance_agent,web_agent]).get_app()
 
-
-agent_team.print_response("Summarize analyst recommendations and share the latest news for NVDA", stream=True)
+if __name__=="__main__":
+    serve_playground_app("playground:app",reload=True)
+# playground is filename and app is where the execution starts.
+# run this to get local host.
+# go to playground and select local host.
+# Chatbot is made.
+# ask the question in the Chatbot console.

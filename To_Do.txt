@@ -1,4 +1,5 @@
 KEEP DOING THIS FOR A WEEK 
+SIMPLE OUTPUT IS OKAY BUT BUILDING AROUND IT AND INTEGRATING IS THE KEY FOR A PRESENTABLE PROJECT
 
 nice & proper usecase - may be image or videos
 RAG
@@ -8,10 +9,9 @@ vector database
 fine tuning
 presentable output - bot or streamlit kinda thing (add images into readme)
 
-Simple output is okay but bulding around it takes time.
+
 Final - Github
 
-Observation -Not very fast
 
 reference list:
 https://www.youtube.com/watch?v=74SnvbQYgx8

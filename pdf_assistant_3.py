@@ -57,7 +57,6 @@ def pdf_assistant(new: bool = False, user: str = "user"):
     assistant.cli_app(markdown=True)
 
 if __name__=="__main__":
-    typer.run(pdf.assistant) # cold cat shower
+    typer.run(pdf.assistant)
 
-Harsha and krish
-
+animal

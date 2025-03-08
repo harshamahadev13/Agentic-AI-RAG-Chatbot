@@ -26,7 +26,7 @@ web_agent = Agent(
 )
 
 finance_agent = Agent(
-    name="Finance Agent - Harsha",
+    name="Finance Agent - Harsha merge",
     # checking merge
     role="Get financial data",
     model=Groq(id="llama-3.3-70b-versatile"),

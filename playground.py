@@ -26,7 +26,7 @@ web_agent = Agent(
 )
 
 finance_agent = Agent(
-    name="Finance Agent - Harsha merging 4",
+    name="Finance Agent - Fun- Harsha merging 4",
     role="Get financial data",
     model=Groq(id="llama-3.3-70b-versatile"),
     tools=[YFinanceTools(stock_price=True, analyst_recommendations=True, company_info=True)],

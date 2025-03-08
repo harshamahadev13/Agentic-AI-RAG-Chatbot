@@ -1,21 +1,36 @@
-KEEP DOING THIS FOR A WEEK 
-SIMPLE OUTPUT IS OKAY BUT BUILDING AROUND IT AND INTEGRATING IS THE KEY FOR A PRESENTABLE PROJECT
+ALL YOU NEED TO DO IS TO SPEND TIME
 
-nice & proper usecase - may be image or videos
-RAG
-structured output
-store in DB
-vector database
-fine tuning
-presentable output - bot or streamlit kinda thing (add images into readme)
+AGENDA:
+SIMPLE OUTPUT IS OKAY. BUT NOT ENOUGH FOR YOUR EXP.
+BUILDING AROUND IT AND INTEGRATING IS THE KEY FOR A PRESENTABLE PROJECT
 
 
-Final - Github
+TASKS:
+nice & proper usecase - may be image or videos - for resume purposes
+-- Of course RAG
+-- hopefully structured output
+-- Possibly store in DB
+-- Possibly vector database
+-- Have to Check - fine tuning
+-- presentable output - bot or streamlit kinda thing (add images into readme)
+-- Finally - If possible - host it in a where others can see it instead of Local.
 
 
 reference list:
 https://www.youtube.com/watch?v=74SnvbQYgx8
 
+
+
+
+
+
+
+
+
+
+
+COULD BE A BIGGER PROJECT
+Watch this guy once: https://www.youtube.com/watch?v=XVO3zsHdvio
 
 
 

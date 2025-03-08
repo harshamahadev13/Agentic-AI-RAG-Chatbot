@@ -9,7 +9,7 @@ import os
 load_dotenv() 
 
 
-# use API keys
+# use API keys to access the model
 from phi.playground import Playground, serve_playground_app
 import phi.api
 phi.api=os.getenv("PHI_API_KEY")

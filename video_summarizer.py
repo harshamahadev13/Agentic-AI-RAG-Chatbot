@@ -1,3 +1,7 @@
+# import packages
+# Using Gemini model via Google AI Studio
+
+
 import streamlit as st 
 from phi.agent import Agent
 from phi.model.google import Gemini

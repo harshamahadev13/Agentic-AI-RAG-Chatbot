@@ -1,3 +1,5 @@
+RAG CHATBOT PROJECT with all features.
+
 Ordered in Increasing Complexity
 
 1) app.py               --> Standard code.

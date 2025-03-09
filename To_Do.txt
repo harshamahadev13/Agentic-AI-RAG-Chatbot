@@ -1,5 +1,7 @@
 ALL YOU NEED TO DO IS TO SPEND TIME
 
+REQUIRED:
+RAG CHATBOT PROJECT with all features.
 
 AGENDA:
 SIMPLE OUTPUT IS OKAY. BUT NOT ENOUGH FOR YOUR EXP.
@@ -7,7 +9,7 @@ BUILDING AROUND IT AND INTEGRATING IS THE KEY FOR A PRESENTABLE PROJECT
 
 
 TASKS:
-nice & proper usecase - may be image or videos - for resume purposes
+nice & proper usecase - for resume purposes
 -- Of course RAG
 -- hopefully structured output
 -- Possibly store in DB

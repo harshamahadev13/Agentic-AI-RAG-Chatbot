@@ -1,3 +1,5 @@
+## ---- unable to run this -----
+
 # RAG application.
 # Using vectorDB to store information contained in a PDF which is in a URL. 
 # Retrieve the appropriate answers from the VectorDB using the Agent.
